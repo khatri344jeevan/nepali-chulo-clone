@@ -1,0 +1,411 @@
+/* Import Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+  
+  --primary-color: rgb(44, 43, 42); /* Replace with your desired primary color */
+  --secondary-color: rgb(185, 132, 63); /* Replace with your desired secondary color */
+}
+
+/* base rule  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Urbanist", sans-serif;
+}
+
+img{
+  width: 100%;
+  display: block;
+}
+
+html{
+  font-size: 10px;
+  scroll-behavior: smooth; /* Enable smooth scrolling */
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+/*?=====================Top header section====================== */
+.top-header{
+    background-color: rgb(185, 132, 63, 0.8);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+}
+
+ .time-address{
+    padding-left:2.5rem ;
+
+ }
+ .time-address p{
+    padding: 0.5rem ;
+    font-size: 1.5rem;
+    font-weight: 500;
+    word-spacing: 0.2rem;
+   color: white;
+   font-family: 'Poppins', sans-serif;
+ }
+.top-header-icons{
+   padding: 0 3.5rem 0 0 ;
+    position: relative;
+    bottom:2rem;
+}
+ .fa-brands{
+    color: white;
+    font-size: 1.7rem;
+    margin: 0.2rem;
+    border: 1px solid white;
+    padding: 0.5rem;
+    transition:1s  ;
+    -webkit-transition:1s  ;
+    -moz-transition:1s  ;
+    -ms-transition:1s  ;
+    -o-transition:1s  ;
+}
+ .fa-brands:hover{
+    color: rgb(58, 53, 53);
+ }
+/*?===================== End Top header section====================== */
+
+
+
+/*?===================== Navbar section Start====================== */
+
+
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: white;
+    border-bottom: .1rem solid rgb(180, 180, 180);
+    
+        
+     
+
+}
+.nav-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo img{
+    width: 10rem;
+    padding: 1rem;
+}
+
+.list-of-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    gap: 3rem;
+}
+.nav-items{
+  font-size: 1.5rem;
+  padding: 2.99rem 1rem;
+    color: rgb(41, 37, 37);
+}
+.nav-items:hover{
+    background-color: rgb(185, 132, 63);
+}
+.list-of-links>a{
+    height:5rem
+}
+.list-of-links i{
+  padding-left: 1rem;
+}
+/* Services */
+.our-services{
+  position: relative;
+}
+.hover:hover .services {
+  display: block;
+  transition: 0.5s;
+  z-index: 1000;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.services{
+  width: 18rem;
+  position:absolute;
+  top:7.77rem;
+  right:36.7rem;
+  font-size: 1.7rem;
+  color: rgb(41, 37, 37);
+  background-color:white;
+  padding-top: 1rem;
+  text-align: right;
+  padding-right: .3rem;
+  display: none;
+  /* z-index: 1000; */
+
+}
+.sublinks{
+  color: inherit;
+}
+.sub-services{
+  padding: 1rem 0 1rem 5rem;
+  border-bottom:1px solid rgb(41, 37, 37);
+
+}
+.sub-services:hover .sublinks{
+ transition: 0.5s;
+ font-size: 2rem;
+ text-transform: uppercase;
+ -webkit-transition: 0.5s;
+ -moz-transition: 0.5s;
+ -ms-transition: 0.5s;
+ -o-transition: 0.5s;
+}
+
+/*?===================== Navbar section End====================== */
+
+/* ?================Gallery Starts===================================== */
+.gallery-container{
+    margin-top: 3rem;
+}
+.child1::before{
+    content: "";
+    display: block;
+    width: 17rem;
+    height: 0.3rem;
+    background-color: var(--primary-color);
+    margin: 0 auto;
+  }
+  .child1{
+    text-align: center;
+    padding: 1rem;
+    font-size: 4rem;
+    font-weight: 600;
+    color: var(--primary-color);
+  
+  }
+
+.images-items img{
+    height: 20rem;
+    width: 23rem;
+}
+.images-items{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 2rem;
+}
+/* ?================Gallery ends===================================== */
+
+
+/* ?==================Begining of  Footer section============================= */
+footer{
+    background-image: url("../Images/table-by-balcony.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  
+  }
+  .footer-container{
+    background-color: rgba(0, 0, 0, 0.7);
+    padding:3rem;
+    gap: 3rem;
+    display: flex;
+    justify-content: space-around;
+  }
+  .items-f {
+    font-size:2rem !important;
+    font-weight: 600;
+    margin:2rem 0;
+    color: white;
+    letter-spacing:0.15rem;
+  }
+  .footer-items{
+    width:50rem;
+    color: white;
+  
+  }
+  .footer-items>div>ul>li>a,.footer-items>p,.footer-items>div{
+    color: white;
+    font-size: 1.5rem;
+  }
+  .footer-items>div>ul>li>a:hover{
+    color:var(--primary-color)  ;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+  }
+  .time{
+    margin: 1rem;
+  }
+  .time div{
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  .pages li{
+    padding: 0.5rem;
+  }
+  .items-f+div>div {
+   padding: 0.7rem 0;
+  }
+  .get-in-touch{
+    display: flex;
+    justify-content: space-around;
+    padding-right: 3rem;
+    border: none;
+  }
+  .get-in-touch>a>i{
+    color: white;
+    font-size: 1.5rem;
+    border: none;
+  }
+  .get-in-touch>a>i:hover{
+    color: var(--primary-color);
+    transition: 0.5s;
+  }
+  .fa-tripadvisor{
+   position: relative;
+   top: .7rem;
+   left: .2rem;
+  
+  }
+  /* ?==================End of  Footer section============================= */
+  /* copyright-section */
+  .copyright{
+    background-color: #232428;
+    padding: 1.2rem;
+    color: white;
+    font-size: 1.3rem;
+    text-align: center;
+  }
+  .copyright span{
+    color:  #FEA700;
+  }
+
+
+
+
+
+   
+@media screen and (max-width: 600px) {
+  /* .top-header {
+    flex-direction: column;
+    text-align: center;
+  } */
+  html{
+    font-size: 6px;
+  }
+  .top-header-icons {
+    margin-top: 10px;
+  }
+
+  .section-navbar .nav-container {
+    flex-direction: row;
+    align-items: center;
+  }
+  .our-menus{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 5rem;
+  }
+  .container2 .child2{
+    flex-wrap: wrap;
+   padding-left:100px;
+  }
+ 
+
+
+  .footer-container{
+    flex-direction: column;
+    align-items: center;
+    
+  
+  }
+ 
+}
+
+/* Tablets (601px to 1024px) */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  html{
+    font-size: 10px;
+
+  }
+  .top-header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .section-navbar .nav-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .navbar-links-container {
+    display: block; /* Show the nav links on tablets */
+  }
+
+  
+
+  
+  
+
+
+}
+
+/* Desktops (1025px) */
+@media screen and (min-width: 1025px) and(max-width:1200) {
+  html{
+    font-size: 11px;
+
+  }
+  .top-header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .section-navbar .nav-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .navbar-links-container {
+    display: block; /* Show the nav links on desktops */
+  }
+
+   
+
+ 
+}
+@media screen and (min-width: 1201px) {
+  html{
+    font-size: 15px;
+
+  }
+  .top-header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .section-navbar .nav-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  
+  
+   
+  
+  
+}
+

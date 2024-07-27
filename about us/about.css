@@ -1,0 +1,747 @@
+/* Import Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+  
+  --primary-color: rgb(44, 43, 42); /* Replace with your desired primary color */
+  --secondary-color: rgb(185, 132, 63); /* Replace with your desired secondary color */
+}
+
+/* base rule  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Urbanist", sans-serif;
+}
+
+img{
+  width: 100%;
+  display: block;
+}
+
+html{
+  font-size: 10px;
+  scroll-behavior: smooth; /* Enable smooth scrolling */
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+/*?=====================Top header section====================== */
+.top-header{
+    background-color: rgb(185, 132, 63, 0.8);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+}
+
+ .time-address{
+    padding-left:2.5rem ;
+
+ }
+ .time-address p{
+    padding: 0.5rem ;
+    font-size: 1.5rem;
+    font-weight: 500;
+    word-spacing: 0.2rem;
+   color: white;
+   font-family: 'Poppins', sans-serif;
+ }
+.top-header-icons{
+   padding: 0 3.5rem 0 0 ;
+    position: relative;
+    bottom:2rem;
+}
+ .fa-brands{
+    color: white;
+    font-size: 1.7rem;
+    margin: 0.2rem;
+    border: 1px solid white;
+    padding: 0.5rem;
+    transition:1s  ;
+    -webkit-transition:1s  ;
+    -moz-transition:1s  ;
+    -ms-transition:1s  ;
+    -o-transition:1s  ;
+}
+ .fa-brands:hover{
+    color: rgb(58, 53, 53);
+ }
+/*?===================== End Top header section====================== */
+
+
+
+/*?===================== Navbar section Start====================== */
+
+
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: white;
+    border-bottom: 0.000000000001px solid rgb(192, 192, 192);
+    
+        
+     
+
+}
+.nav-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo img{
+    width: 10rem;
+    padding: 1rem;
+}
+
+.list-of-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    gap: 3rem;
+}
+.nav-items{
+  font-size: 1.5rem;
+
+  padding: 2.99rem 1rem;
+    color: rgb(41, 37, 37);
+}
+.nav-items:hover{
+    background-color: rgb(185, 132, 63);
+}
+.list-of-links>a{
+    height:5rem
+}
+.list-of-links i{
+  padding-left: 1rem;
+}
+/* Services */
+.our-services{
+  position: relative;
+}
+.hover:hover .services {
+  display: block;
+  transition: 0.5s;
+  z-index: 1000;
+}
+.services{
+  width: 18rem;
+  position:absolute;
+  top:7.77rem;
+  right:36.7rem;
+  font-size: 1.7rem;
+  color: rgb(41, 37, 37);
+  background-color:white;
+  padding-top: 1rem;
+  text-align: right;
+  padding-right: .3rem;
+  display: none;
+  /* z-index: 1000; */
+
+}
+.sublinks{
+  color: inherit;
+}
+.sub-services{
+  padding: 1rem 0 1rem 5rem;
+  border-bottom:1px solid rgb(41, 37, 37);
+
+}
+.sub-services:hover .sublinks{
+ transition: 0.5s;
+ font-size: 2rem;
+ text-transform: uppercase;
+}
+
+/*?===================== Navbar section End====================== */
+/* ?=====================about-us section========================== */
+.about-container{
+
+    padding-top: 3rem;
+    display: flex;
+    justify-content:space-around;
+    align-items:self-start;
+    margin: 3rem 0 3rem 4srem;
+        h1{
+            font-size: 3rem;
+            font-family: "open sans", sans-serif;
+            color: var(--primary-color);
+            padding-top: 1rem;
+            margin-bottom: 1rem;
+            text-decoration: overline;
+            text-decoration-thickness:.3rem;
+            text-align: center;
+        
+        }
+        strong{
+            font-size: 1.4rem;
+            line-height: 1.9;
+            font-family: "open sans", sans-serif;
+            color: rgb(100, 98, 98);
+            font-weight: 700;
+            
+        }
+       span{
+        font-size: 1.5rem;
+        font-weight: 1000;
+       }
+    }
+   
+/* ?Slider section */
+.line {
+    position: absolute;
+    top: -.5rem;
+    left: 0;
+    width: 0;
+    height: .5rem;
+    background: rgb(41, 103, 41);
+    /*animation-name,animation-duration,animation-timing-function,animation-delay,animation-iteration-count,animation-direction,animation-fill-mode,animation-play-state,andanimation-timeline.*/animation: lineAnimation 5s infinite ease-in-out;
+    
+    
+}
+.line-bg{
+    position: absolute;
+    top: -.5rem;
+    left: 0;
+    width: 100%;
+    height: .5rem;
+    background: rgb(164, 162, 162);
+}
+@keyframes lineAnimation {
+    0% {
+        width: 0;
+        opacity: 1;
+    }
+    90% {
+        width: 100%;
+        opacity: 1;
+    }
+    91%{
+        opacity: 0;
+    }
+    100% {
+        width: 0;
+        opacity: 0;
+    }
+}
+.slider-section{
+    /* Slideshow container */
+    .slideshow-container {
+     max-width: 100rem;
+     position: relative;
+ 
+   }
+  
+   /* Hide the images by default */
+   .mySlides {
+     display: none;
+   }
+   img {
+     vertical-align: middle;
+   }
+
+
+
+   .dot-container {
+     display: inline-block;
+     display: flex;
+     gap: 2rem;
+     position: absolute;
+     bottom: 3rem;
+     left: 28rem;
+    
+   }
+   /* The dots/bullets/indicators */
+   .dot {
+     cursor: pointer;
+     height: 1.2rem;
+     width: 1.2rem;
+     margin: 0 .2rem;
+     background-color: #bbb;
+     border-radius: 50%;
+     transition: background-color 0.6s ease;
+   }
+
+   .active,
+   .dot:hover {
+     background-color: white;
+   }
+  
+  
+}
+/* Slider end */
+.traveller-rating{
+    font-size: 1rem;
+}
+    .c-first{
+        
+        width: 68.5rem;
+        
+    }
+    .c-second>div>h5{
+        font-size: 1.8rem;
+        font-family: "open sans", sans-serif;
+        color: var(--primary-color);
+        margin-bottom: 1rem;
+        
+
+    }
+  
+.c-second{
+    width: 26rem;
+}
+.reserve-container{
+    display: inline-block;
+    padding: .5rem;
+    background-color: var(--secondary-color);
+    box-shadow: .3rem .3rem .7rem rgb(133, 141, 148);
+  }
+  .r-btn{
+    border: 1px solid white;
+    display: inline-block;
+    padding: 1rem;
+    background-color: var(--secondary-color);
+  }
+  .r-btn a{
+    color: white;
+  }
+  .tripadvisor{
+    
+    font-size: 1.2rem;
+    
+    
+
+}
+.tripadvisor-container{
+    margin-top: 2rem;
+    margin-left: 1rem;
+    border: .1rem solid rgb(15, 215, 139);
+    padding: 1rem 1rem 2rem 2rem;
+}
+.trip-logo-upper{
+    color: black;
+    font-size: 1.2rem;
+    padding: .3rem .2rem;
+    margin-right: .5rem;
+    background-color: rgb(15, 215, 139);
+    border-radius: 60%;
+    -webkit-border-radius: 60%;
+    -moz-border-radius: 60%;
+    -ms-border-radius: 60%;
+    -o-border-radius: 60%;
+}
+
+#TA{
+position: relative;
+top: .7rem;
+font-size: 1.5rem;
+color: black;
+font-weight: 700;
+}
+#nepChulo{
+font-size: 2.5rem;
+font-weight: 700;
+text-decoration: underline;
+color: black;
+margin-top: 2rem;
+}
+.traveller-rating{
+font-size: 1.2rem;
+margin-top: 1rem;
+color: var(--primary-color);
+}
+.r-dots-container{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+.rating-dots{
+    width: 1.2rem;
+    height: 1.2rem;
+    background-color: rgb(10, 164, 105);
+    border: .2rem solid rgb(10, 164, 105);
+    margin-top: .8rem;
+    border-radius: 50.5rem;
+    -webkit-border-radius: 50.5rem;
+    -moz-border-radius: 50.5rem;
+    -ms-border-radius: 50.5rem;
+    -o-border-radius: 50.5rem;
+}
+.last-dot{
+    background-color: white;
+}
+.r-text{
+    margin-top: .8rem;
+    font-size: 1.3rem;
+    color: var(--primary-color);
+}
+.ranking{
+    font-size: 1.3rem;
+    color: var(--primary-color);
+    margin-top: 1rem;
+    div {
+        font-size: 1.8rem;
+        font-weight: 520;
+
+        width: 22rem;
+        sup,span{
+            color: rgb(0, 0, 0);
+        }
+    }
+}
+.traveler-reviews{
+    color: var(--primary-color);
+    margin-top: 1rem;
+    font-size: 1.3rem;
+    font-family: "open sans", sans-serif;
+    li{
+        padding: .3rem 0;
+      
+    
+    }
+}
+.last-culture{
+    display: flex;
+    
+    li{
+        margin: .5rem;
+        font-size: 1.2rem;
+        
+    }
+    a{
+        text-decoration: underline;
+        color: black;
+        font-weight: 510;
+        font-size: 1.3rem;
+    }
+    .link-1{
+        padding-right: 1rem;
+        border-right: .2rem solid var(--primary-color);
+    }
+}
+  .our-special {
+    display: flex;
+    flex-direction: column;
+    
+  }
+  
+  
+ 
+  
+  
+  .special-items>a>img:hover {
+    opacity: 1;
+    transition: 1s;
+  }
+.special-items div{
+    font-size: 1.5rem;
+    font-weight: 600;
+    
+}
+.special-items{
+    margin-bottom: 2rem;
+}
+
+  /*?starting of company management  */
+  .company-management{
+    width: 97rem;
+    margin: 4rem 0 5rem 0;
+    h2{
+      background-color: rgb(255, 170, 0);
+      font-size: 2.5rem;
+      font-weight: 600;
+      padding: 1rem;
+      color: var(--primary-color);
+    }
+    h4{
+      background-color: rgb(255, 106, 0);
+      font-size: 2.5rem;
+      font-weight: 800;
+      padding: 1rem;
+      color: var(--primary-color);
+    }
+    h1{
+      font-size: 3rem;
+      font-family: "open sans", sans-serif;
+      color: var(--primary-color);
+      padding-top: 1rem;
+      margin-bottom: 1rem;
+      text-decoration: overline;
+      text-decoration-thickness:.3rem;
+      text-align: center;
+      margin-bottom:2rem ;
+  
+  }
+    p{
+      font-size: 1.3rem;
+      line-height: 1.5;
+      padding: 0 1rem;
+    }
+  }
+  .top2-directors{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+  }
+  .executives{
+    border: .2rem solid var(--secondary-color);
+    width: 40rem;
+    
+  }
+  .executive-director{
+    position: relative;
+    left: 4.2rem;
+    margin-top: 2rem;
+  
+  }
+
+  .connections{
+    display: flex;
+    justify-content: flex-start;
+    padding-right: 3rem;
+    border: none;
+    background-color: var(--secondary-color);
+    
+  }
+  .chairman .connections{
+    position: relative;
+    bottom: 0;
+  }
+  .connections>a>i{
+    color: white;
+    font-size: 1.5rem;
+    border: none;
+  }
+  .connections>a>i:hover{
+    color: var(--primary-color);
+    transition: 0.5s;
+  }
+  /*?end of company management  */
+  
+/*?===================== End About section====================== */
+
+
+
+/* ?==================Begining of  Footer section============================= */
+footer{
+    background-image: url("../Images/table-by-balcony.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  
+  }
+  .footer-container{
+    background-color: rgba(0, 0, 0, 0.7);
+    padding:3rem;
+    gap: 3rem;
+    display: flex;
+    justify-content: space-around;
+  }
+  .items-f {
+    font-size:2rem !important;
+    font-weight: 600;
+    margin:2rem 0;
+    color: white;
+    letter-spacing:0.15rem;
+  }
+  .footer-items{
+    width:50rem;
+    color: white;
+  
+  }
+  .footer-items>div>ul>li>a,.footer-items>p,.footer-items>div{
+    color: white;
+    font-size: 1.5rem;
+  }
+  .footer-items>div>ul>li>a:hover{
+    color:var(--primary-color)  ;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+  }
+  .time{
+    margin: 1rem;
+  }
+  .time div{
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  .pages li{
+    padding: 0.5rem;
+  }
+  .items-f+div>div {
+   padding: 0.7rem 0;
+  }
+  .get-in-touch{
+    display: flex;
+    justify-content: space-around;
+    padding-right: 3rem;
+    border: none;
+  }
+  .get-in-touch>a>i{
+    color: white;
+    font-size: 1.5rem;
+    border: none;
+  }
+  .get-in-touch>a>i:hover{
+    color: var(--primary-color);
+    transition: 0.5s;
+  }
+  .fa-tripadvisor{
+   position: relative;
+   top: .7rem;
+   left: .2rem;
+  
+  }
+  /* ?==================End of  Footer section============================= */
+  /* copyright-section */
+  .copyright{
+    background-color: #232428;
+    padding: 1.2rem;
+    color: white;
+    font-size: 1.3rem;
+    text-align: center;
+  }
+  .copyright span{
+    color:  #FEA700;
+  }
+  /*?=====================End of Footer section====================== */
+  
+@media screen and (max-width: 600px) {
+  /* .top-header {
+    flex-direction: column;
+    text-align: center;
+  } */
+  html{
+    font-size: 6px;
+  }
+  .top-header-icons {
+    margin-top: 10px;
+  }
+/* .company-management{
+  flex-direction: column;
+} */
+  .section-navbar .nav-container {
+    flex-direction: row;
+    align-items: center;
+  }
+  .our-menus{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 5rem;
+  }
+  .container2 .child2{
+    flex-wrap: wrap;
+   padding-left:100px;
+  }
+ 
+.about-container{
+  flex-wrap: wrap;
+}
+
+  .footer-container{
+    flex-direction: column;
+    align-items: center;
+    
+  
+  }
+ 
+}
+
+/* Tablets (601px to 1024px) */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  html{
+    font-size: 10px;
+
+  }
+  .top-header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .section-navbar .nav-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .navbar-links-container {
+    display: block; /* Show the nav links on tablets */
+  }
+
+  
+  .about-container{
+    flex-wrap: wrap;
+  }
+  
+  
+  
+
+
+}
+
+/* Desktops (1025px) */
+@media screen and (min-width: 1025px) and(max-width:1200) {
+  html{
+    font-size: 11px;
+
+  }
+  .top-header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .section-navbar .nav-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .navbar-links-container {
+    display: block; /* Show the nav links on desktops */
+  }
+
+  .about-container{
+    flex-wrap: wrap;
+  }
+  
+   
+
+ 
+}
+@media screen and (min-width: 1201px) {
+  html{
+    font-size: 15px;
+
+  }
+  .top-header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .section-navbar .nav-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .about-container{
+    flex-wrap: wrap;
+  }
+  
+   
+  
+  
+}
+
